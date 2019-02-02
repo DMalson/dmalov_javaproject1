@@ -37,7 +37,10 @@ public class Class_01 {
         //тест задания 7
         privetName("Дмитрий");
         //тест задания 8
-        proveTrue();
+        System.out.println("True True " + proveTrue(true, true));
+        System.out.println("True False " + proveTrue(true, false));
+        System.out.println("False True " + proveTrue(false, true));
+        System.out.println("False False " + proveTrue(false, false));
         //тест задания 10
         System.out.println("3 и 5 - кратные? " + aliquotNumbers(3, 5));
         System.out.println("3 и 6 - кратные? " + aliquotNumbers(3, 6));
@@ -110,19 +113,8 @@ public class Class_01 {
     //Конец задания 7
 
     //Задание 8
-    public static void proveTrue() {
-        boolean a = true;
-        boolean b = true;
-        System.out.println("true true - " + ((!(a && b) && (a || b)) || ((a && b) || !(a || b))));
-        a = true;
-        b = false;
-        System.out.println("true false - " + ((!(a && b) && (a || b)) || ((a && b) || !(a || b))));
-        a = false;
-        b = true;
-        System.out.println("false true - " + ((!(a && b) && (a || b)) || ((a && b) || !(a || b))));
-        a = false;
-        b = false;
-        System.out.println("false false - " + ((!(a && b) && (a || b)) || ((a && b) || !(a || b))));
+    public static boolean proveTrue(boolean a, boolean b) {
+        return ((!(a && b) && (a || b)) || ((a && b) || !(a || b)));
     }
     //Конец задания 8
 
@@ -250,5 +242,6 @@ public class Class_01 {
         return false;
     }
     //Конец задания 19
+
 }
 
