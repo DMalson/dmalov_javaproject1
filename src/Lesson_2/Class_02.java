@@ -52,6 +52,7 @@ public class Class_02 {
             System.out.print("Сдвигаем ещё раз? 1 - Да, другое число - нет : ");
             answer = in.nextInt();
         } while (answer == 1);
+
     }
 
     public static void printArr(int[][] arr) {
@@ -196,8 +197,6 @@ public class Class_02 {
             i++;
             j--;
         } while (i < j);
-
-
         //Конец задания 7
     }
 }
