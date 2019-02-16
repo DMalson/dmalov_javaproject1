@@ -1,7 +1,5 @@
 package Lesson_4;
 
-import java.text.MessageFormat;
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
