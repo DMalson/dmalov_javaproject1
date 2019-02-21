@@ -16,22 +16,22 @@ public class Class_03 {
         Scanner sc1 = new Scanner(System.in);
         System.out.println("Это игра \"УГАДАЙ ЕДУ\". Введите пустую строку, если сдаётесь.");
         while (!(answer.equals(useranswer))) {
-            System.out.println("Подсказка - " + showTip(answer,useranswer));
+            System.out.println("Подсказка - " + showTip(answer, useranswer));
             System.out.print("Введите слово : ");
-            useranswer =sc1.nextLine();
+            useranswer = sc1.nextLine();
             if (useranswer.equals("")) break;
         }
         System.out.println(useranswer.equals("") ? "Сожалею, но вы проиграли!" : "Поздравляем, вы выиграли!");
-        }
+    }
 
 
-    public static String showTip(String s1, String s2){
+    public static String showTip(String s1, String s2) {
         String returnStr = "";
         int lmin = s1.length() > s2.length() ? s2.length() : s1.length();
-        for (int i=0; i< lmin; i++){
-            returnStr += s1.charAt(i)==s2.charAt(i) ? s1.charAt(i) : '#';
+        for (int i = 0; i < lmin; i++) {
+            returnStr += s1.charAt(i) == s2.charAt(i) ? s1.charAt(i) : '#';
         }
-        while (returnStr.length()<15) returnStr += '#';
+        while (returnStr.length() < 15) returnStr += '#';
         return returnStr;
     }
 
