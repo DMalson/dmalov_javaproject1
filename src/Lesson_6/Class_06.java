@@ -26,7 +26,6 @@ public class Class_06 {
             animal.swim((int) Math.round(animal.getMaxSwim() * 0.7));
             System.out.println();
         }
-
     }
 
     public static void createNewAnimal(Animal animal) {
